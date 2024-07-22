@@ -1,6 +1,4 @@
-
-import { Home, Settings, Logs } from 'lucide-react'
-import { Connection } from './types'
+import { Home, Logs, Settings } from "lucide-react"
 
 export const clients = [...new Array(10)].map((client, index) => ({
   href: `/${index + 1}.png`,
@@ -89,11 +87,7 @@ export const products = [
 
 export const menuOptions = [
   { name: 'Dashboard', Component: Home, href: '/dashboard' },
-  // { name: 'Workflows', Component: any, href: '/workflows' },
   { name: 'Settings', Component: Settings, href: '/settings' },
-  // { name: 'Connections', Component: Category, href: '/connections' },
-  // { name: 'Billing', Component: Payment, href: '/billing' },
-  // { name: 'Templates', Component: Templates, href: '/templates' },
   { name: 'Logs', Component: Logs, href: '/logs' },
 ]
 
@@ -142,7 +136,7 @@ export const EditorCanvasDefaultCardTypes = {
   },
 }
 
-export const CONNECTIONS: Connection[] = [
+export const CONNECTIONS: any[] = [
   {
     title: 'Google Drive',
     description: 'Connect your google drive to listen to folder changes',

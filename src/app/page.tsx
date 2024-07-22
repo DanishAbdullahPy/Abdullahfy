@@ -105,9 +105,7 @@ export default function Home() {
                     Get Started Now
                   </CardItem>
                 </div>
-                
               </CardBody>
-
             </CardContainer>
             <CardContainer className="inter-var ">
               <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-neutral-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full md:!w-[350px] h-auto rounded-xl p-6 border">
@@ -155,8 +153,7 @@ export default function Home() {
                   </CardItem>
                 </div>
               </CardBody>
-
-           
+              
             </CardContainer>
 
             <CardContainer className="inter-var ">
