@@ -4,10 +4,8 @@ import { ContainerScroll } from "@/components/global/container-scroll-animation"
 import { clients, products } from "@/lib/constant";
 import { InfiniteMovingCards } from "@/components/global/infinite-moving-cards";
 import { HeroParallax } from "@/components/global/connect-parallax";
-import { LampComponent } from "@/components/global/lamp";
 import { CardBody, CardContainer, CardItem } from "@/components/global/3d-card";
-import { CheckIcon } from "lucide-react";
-
+import { CheckIcon, Lamp } from "lucide-react";
 export default function Home() {
   return (
     <>
@@ -54,14 +52,11 @@ export default function Home() {
           <HeroParallax products={products}></HeroParallax>
         </section>
 
-        <section className="mt-[-100px]">
-          
-          <LampComponent />
-
-          <div className="flex flex-wrap items-center justify-center flex-col md:flex-row gap-8 -mt-72">
+        <section className="">
+          <div className="flex flex-wrap items-center justify-center flex-col md:flex-row gap-8  mt-1">
            
             <CardContainer className="inter-var ">
-              <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-neutral-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full md:!w-[350px] h-auto rounded-xl p-6 border">
+              <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-neutral-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-80 h-74 md:!w-[350px]  rounded-xl p-6 border">
                 <CardItem
                   translateZ="50"
                   className="text-xl font-bold text-neutral-600 dark:text-white "
@@ -108,7 +103,7 @@ export default function Home() {
               </CardBody>
             </CardContainer>
             <CardContainer className="inter-var ">
-              <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-neutral-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full md:!w-[350px] h-auto rounded-xl p-6 border">
+              <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-neutral-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1]  md:!w-[350px] w-80 h-74 rounded-xl p-6 border">
                 <CardItem
                   translateZ="50"
                   className="text-xl font-bold text-neutral-600 dark:text-white "
@@ -158,7 +153,7 @@ export default function Home() {
 
             <CardContainer className="inter-var ">
 
-              <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-neutral-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full md:!w-[350px] h-auto rounded-xl p-6 border">
+              <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-neutral-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1]  md:!w-[350px] w-80 h-74 rounded-xl p-6 border">
                 <CardItem
                   translateZ="50"
                   className="text-xl font-bold text-neutral-600 dark:text-white "
@@ -204,9 +199,11 @@ export default function Home() {
                 </div>
               </CardBody>
             </CardContainer>
-          
           </div>
         </section>
+        <div className="text-white text-center py-2 md:py-4">
+  Developed By Abdullah .pvt.ltd
+</div>
       </main>
     </>
   );
