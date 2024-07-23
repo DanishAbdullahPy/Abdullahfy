@@ -6,12 +6,12 @@ import { InfiniteMovingCards } from "@/components/global/infinite-moving-cards";
 import { HeroParallax } from "@/components/global/connect-parallax";
 import { CardBody, CardContainer, CardItem } from "@/components/global/3d-card";
 import { CheckIcon, Lamp } from "lucide-react";
+import DashboardPage from "./(main)/dashboard/page";
 export default function Home() {
   return (
     <>
       <main>
         <Navbar />
-       
         <section className="h-screen w-full bg-neutral-950 rounded-md !overflow-visible relative flex flex-col items-center antialiased">
           <div className="absolute inset-0 h-full w-full items-center px-5 py-28 [background:radial-gradient(125%_125%_at_50%_10%,#000_35%,#223_100%)]"></div>
           <div className="flex flex-col mt-[-100px] md:mt-[-50px]">
@@ -205,6 +205,8 @@ export default function Home() {
   Developed By Abdullah .pvt.ltd
 </div>
       </main>
+
+      
     </>
   );
 }
